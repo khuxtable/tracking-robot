@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Converted by db4-upgrade version 1.0 -->
+<article version="5.0" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:ns5="http://www.w3.org/1999/xhtml"
+         xmlns:ns4="http://www.w3.org/1998/Math/MathML"
+         xmlns:ns3="http://www.w3.org/2000/svg"
+         xmlns:ns="http://docbook.org/ns/docbook">
+  <info>
+    <title>Introduction</title>
+
+    <author>
+      <personname><firstname>Kathryn</firstname><surname>Huxtable</surname></personname>
+
+      <affiliation>
+        <orgname>kathrynhuxtable.org</orgname>
+      </affiliation>
+    </author>
+
+    <pubdate>2010-08-19</pubdate>
+  </info>
+
+  <section>
+    <info>
+      <title>Introduction</title>
+    </info>
+
+    <para>The heat seeking robot is an <link
+    xlink:href="http://arduino.cc">Arduino</link>-based home-brew robot that
+    moves towards heat, as detected by two passive infrared detectors.</para>
+
+    <para>The <link
+    xlink:href="http://github.com/khuxtable/heat-seeking-robot/tree/master/src/main/HeatSeekingRobot/">source
+    sketches</link> are in a <link
+    xlink:href="http://github.com/khuxtable/heat-seeking-robot">git
+    repository</link>.</para>
+
+    <para>At the moment, I'm just starting out.</para>
+  </section>
+</article>
