@@ -32,7 +32,13 @@ void setup() {
 int runTime = 3000;
 
 void loop() {
-    goForward();
-    delay(runTime);
-    turnRight(90);
+    turnRight(10);
+    turnLeft(20);
+    turnRight(10);
+    stopMotion();
+    int pirValue = readPir();
+    setSensorAngle(-30);
+    setSensorAngle(30);
+    setSensorAngle(0);
+    delay(50);
 }

@@ -22,8 +22,8 @@
 
 // Digital pins to control the servos.
 #define SENSOR_SERVO_PIN  7
-#define LEFT_SERVO_PIN    8
-#define RIGHT_SERVO_PIN   9
+#define RIGHT_SERVO_PIN   8
+#define LEFT_SERVO_PIN    9
 
 // Digital pins to read PIR sensors.
 #define LEFT_PIR_PIN      3

@@ -29,6 +29,7 @@ Servo rightServo;
 void initMotion() {
     leftServo.attach(LEFT_SERVO_PIN);
     rightServo.attach(RIGHT_SERVO_PIN);
+    stopMotion();
 }
 
 #define TURN_TIME   2000
@@ -43,7 +44,7 @@ void goForward() {
     rightServo.write(0);
 }
 
-void stop() {
+void stopMotion() {
     leftServo.write(95);
     rightServo.write(95);
 }
@@ -51,11 +52,11 @@ void stop() {
 void turnLeft(int angle) {
     leftServo.write(0);
     rightServo.write(0);
-    delay(TURN_TIME * angle / 90);
+    delay((long) TURN_TIME * angle / 90);
 }
 
 void turnRight(int angle) {
     leftServo.write(180);
     rightServo.write(180);
-    delay(TURN_TIME * angle / 90);
+    delay((long) TURN_TIME * angle / 90);
 }

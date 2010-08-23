@@ -26,12 +26,13 @@
 Servo sensorServo;
 
 void initSensor() {
-    leftServo.attach(SENSOR_SERVO_PIN);
+    sensorServo.attach(SENSOR_SERVO_PIN);
+    setSensorAngle(0);
 }
 
-#define DELAY_TIME  15
+#define DELAY_TIME  50
 
 void setSensorAngle(int angle) {
-    sensorServo.write(angle - 90);
+    sensorServo.write(angle + 90);
     delay(DELAY_TIME);
 }
