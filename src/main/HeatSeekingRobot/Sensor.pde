@@ -23,6 +23,10 @@
  * Author: Kathryn Huxtable
  */
 
+#define DELAY_TIME  50
+
+int currentSensorAngle;
+
 Servo sensorServo;
 
 void initSensor() {
@@ -30,9 +34,12 @@ void initSensor() {
     setSensorAngle(0);
 }
 
-#define DELAY_TIME  50
+int getSensorAngle() {
+    return currentSensorAngle;
+}
 
 void setSensorAngle(int angle) {
     sensorServo.write(angle + 90);
+    currentSensorAngle = angle;
     delay(DELAY_TIME);
 }
