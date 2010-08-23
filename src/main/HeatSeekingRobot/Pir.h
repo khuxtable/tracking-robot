@@ -15,15 +15,12 @@
  */
 
 /*
- * Main program for a heat seeking robot.
+ * Passive Infrared detector (PIR) for a heat seeking robot.
  *
  * Author: Kathryn Huxtable
  */
 
-void setup() {
-
-}
-
-void loop() {
-
-}
+#define PIR_NONE    0
+#define PIR_LEFT    1
+#define PIR_CENTER  2
+#define PIR_RIGHT   3
