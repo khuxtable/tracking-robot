@@ -25,7 +25,7 @@
 
 // The time in milliseconds we give the sensor to calibrate.
 // (10-60 secs according to the datasheet.)
-#define CALIBRATION_TIME 30000
+#define CALIBRATION_TIME 15000
 
 /////////////////////////////
 //SETUP
