@@ -32,7 +32,7 @@ void initMotion() {
     stopMotion();
 }
 
-#define TURN_TIME   2000
+#define TURN_TIME   925
 
 void goBackward() {
     leftServo.write(0);
