@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#include <Servo.h>
 #include "PinAssignments.h"
+#include "Pir.h"
 
 /*
  * Main program for a heat seeking robot.
@@ -29,16 +29,22 @@ void setup() {
     initPir();
 }
 
-int runTime = 3000;
-
 void loop() {
-    turnRight(10);
-    turnLeft(20);
-    turnRight(10);
-    stopMotion();
     int pirValue = readPir();
-    setSensorAngle(-30);
-    setSensorAngle(30);
-    setSensorAngle(0);
+    switch (pirValue) {
+    case PIR_CENTER:
+        goForward();
+        delay(200);
+        break;
+    case PIR_LEFT:
+        turnLeft(30);
+        break;
+    case PIR_RIGHT:
+        turnRight(30);
+        break;
+    default:
+        delay(200);
+        break;
+    }
     delay(50);
 }
