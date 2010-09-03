@@ -25,9 +25,8 @@
 #define RIGHT_SERVO_PIN   8
 #define LEFT_SERVO_PIN    9
 
-// Digital pins to read PIR sensors.
-#define LEFT_PIR_PIN      3
-#define RIGHT_PIR_PIN     4
+// Digital pin to read PING))) sensor.
+#define PING_PIN          4
 
 // Digital pins to signal PIR values.
 #define LEFT_LED_PIN     10

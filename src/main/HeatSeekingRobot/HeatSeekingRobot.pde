@@ -15,7 +15,6 @@
  */
 
 #include "PinAssignments.h"
-#include "Pir.h"
 
 /*
  * Main program for a heat seeking robot.
@@ -26,25 +25,25 @@
 void setup() {
     initSensor();
     initMotion();
-    initPir();
+    initPing();
 }
 
 void loop() {
-    int pirValue = readPir();
-    switch (pirValue) {
-    case PIR_CENTER:
+    int distance = getPing();
+    switch (distance) {
+    case 0:
         goForward();
         delay(200);
         break;
-    case PIR_LEFT:
+    case 1:
         turnLeft(30);
         break;
-    case PIR_RIGHT:
+    case 2:
         turnRight(30);
         break;
     default:
         delay(200);
         break;
     }
-    delay(50);
+    delay(100);
 }
