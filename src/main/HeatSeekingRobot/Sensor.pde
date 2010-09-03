@@ -39,7 +39,10 @@ int getSensorAngle() {
 }
 
 void setSensorAngle(int angle) {
-    sensorServo.write(angle + 90);
+    // Overflow protection.
+    angle = angle < -90 ? -90 : angle > 90 ? 90 : angle;
+    // Convert to range 0 - 180.
+    sensorServo.write(90 - angle);
     currentSensorAngle = angle;
     delay(DELAY_TIME);
 }
