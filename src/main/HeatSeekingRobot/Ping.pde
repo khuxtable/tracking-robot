@@ -24,7 +24,7 @@ void initPing() {
     // Nothing to do here.
 }
 
-int getPing() {
+long getPing() {
     // The PING))) is triggered by a HIGH pulse of 2 or more microseconds.
     // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
     pinMode(PING_PIN, OUTPUT);
@@ -39,6 +39,8 @@ int getPing() {
     // of the ping to the reception of its echo off of an object.
     pinMode(PING_PIN, INPUT);
     long duration = pulseIn(PING_PIN, HIGH);
+    pinMode(PING_PIN, OUTPUT);
+    digitalWrite(PING_PIN, LOW);
 
     // Convert the time into a distance and return it.
     return microsecondsToCentimeters(duration);
