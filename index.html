@@ -126,10 +126,81 @@
       </div>
     </div>
     <p>The tracking robot is an <a class="link" href="http://arduino.cc" target="_top" shape="rect">Arduino</a>-based home-brew robot that
-    moves towards a moving object, as detected by an ultrasonic range finder.</p>
+    moves towards a moving object, as detected by an ultrasonic range
+    finder.</p>
+    <p>At present, it is pretty basic. It just detects walls and avoids
+    them.</p>
+  </div>
+  <div class="section" title="Details">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h1 class="title"><a id="d0e28" shape="rect"></a>Details</h1>
+        </div>
+      </div>
+    </div>
+    <p>It uses a <a class="link" href="http://www.parallax.com/tabid/768/ProductID/92/Default.aspx" target="_top" shape="rect">Ping)))</a>
+    ultrasonic range finder, mounted in a crudely cut piece of foam core,
+    which is crudely pinned to the servo horn. My plan is to use basswood or
+    something like that instead of the foam core, but I had some foam core and
+    I wanted to test proof of concept.</p>
+    <p>The base of the robot is a wood laminate floor sample, purchased
+    from a hardware store for less than a dollar. Some poplar doweling is used
+    to mount the wheel servos and to provide a vertical support for the sensor
+    servo and also a holder for the battery pack, which contains four AA
+    cells.</p>
+    <p>I used some nylon spacers to mount the Arduino duemilanove board and
+    then mounted an Arduino protoshield onto that with a mini-breadboard glued
+    to the protoshield. The protoshield brings the Arduino headers up and
+    gives me several power and ground headers. There's an RGB LED on the board
+    that I was using in an earlier version of this software for information.
+    At the moment, it's unused. That may change.</p>
+    <p>I'd post a circuit diagram, but there's no mystery here. Everything
+    is pretty much connected straight through. The <a class="link" href="http://github.com/khuxtable/tracking-robot/blob/master/src/main/TrackingRobot/PinAssignments.h" target="_top" shape="rect">PinAssignments.h</a>
+    file has the pin assignments for everything.</p>
     <p>The <a class="link" href="http://github.com/khuxtable/tracking-robot/tree/master/src/main/TrackingRobot/" target="_top" shape="rect">source
-    sketches</a> are in a <a class="link" href="http://github.com/khuxtable/tracking-robot" target="_top" shape="rect">git repository</a>.</p>
-    <p>At the moment, I'm just starting out.</p>
+    sketches</a> are in a <a class="link" href="http://github.com/khuxtable/tracking-robot" target="_top" shape="rect">git
+    repository</a>.</p>
+  </div>
+  <div class="section" title="Pictures">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h1 class="title"><a id="d0e53" shape="rect"></a>Pictures</h1>
+        </div>
+      </div>
+    </div>
+    <p>Here are some pictures:</p>
+    <div class="informaltable">
+      <table style="border-collapse: collapse;border-top: 0 solid ; border-bottom: 0 solid ; border-left: 0 solid ; border-right: 0 solid ; ">
+        <colgroup span="1">
+          <col span="1"></col>
+          <col span="1"></col>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="border-right: 0 solid ; border-bottom: 0 solid ; " rowspan="1" colspan="1">
+              <div class="mediaobject">
+                <img src="./images/Robot-front-view.png"></img>
+              </div>
+            </td>
+            <td style="border-bottom: 0 solid ; " rowspan="1" colspan="1">
+              <div class="mediaobject">
+                <img src="./images/Robot-side-view.png"></img>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-right: 0 solid ; " rowspan="1" colspan="1">
+              <div class="mediaobject">
+                <img src="./images/Robot-back-view.png"></img>
+              </div>
+            </td>
+            <td class="auto-generated" style="" rowspan="1" colspan="1">&#xa0;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
       </div>
