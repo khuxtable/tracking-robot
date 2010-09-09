@@ -115,7 +115,7 @@
 			But if someone checks out the project, they can rebuild the site documentation, so we're not too concerned. -->
 		<site>
 			<id>github-site</id>
-			<url>gitsite:git@github.com/khuxtable/home-thermostat.git</url>
+			<url>gitsite:git@github.com/khuxtable/tracking-robot.git</url>
 		</site>
 	</distributionManagement>
 	<scm>
