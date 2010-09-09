@@ -27,13 +27,79 @@
 
     <para>The tracking robot is an <link
     xlink:href="http://arduino.cc">Arduino</link>-based home-brew robot that
-    moves towards a moving object, as detected by an ultrasonic range finder.</para>
+    moves towards a moving object, as detected by an ultrasonic range
+    finder.</para>
+
+    <para>At present, it is pretty basic. It just detects walls and avoids
+    them.</para>
+  </section>
+
+  <section>
+    <title>Details</title>
+
+    <para>It uses a <link
+    xlink:href="http://www.parallax.com/tabid/768/ProductID/92/Default.aspx">Ping)))</link>
+    ultrasonic range finder, mounted in a crudely cut piece of foam core,
+    which is crudely pinned to the servo horn. My plan is to use basswood or
+    something like that instead of the foam core, but I had some foam core and
+    I wanted to test proof of concept.</para>
+
+    <para>The base of the robot is a wood laminate floor sample, purchased
+    from a hardware store for less than a dollar. Some poplar doweling is used
+    to mount the wheel servos and to provide a vertical support for the sensor
+    servo and also a holder for the battery pack, which contains four AA
+    cells.</para>
+
+    <para>I used some nylon spacers to mount the Arduino duemilanove board and
+    then mounted an Arduino protoshield onto that with a mini-breadboard glued
+    to the protoshield. The protoshield brings the Arduino headers up and
+    gives me several power and ground headers. There's an RGB LED on the board
+    that I was using in an earlier version of this software for information.
+    At the moment, it's unused. That may change.</para>
+
+    <para>I'd post a circuit diagram, but there's no mystery here. Everything
+    is pretty much connected straight through. The <link
+    xlink:href="http://github.com/khuxtable/tracking-robot/blob/master/src/main/TrackingRobot/PinAssignments.h">PinAssignments.h</link>
+    file has the pin assignments for everything.</para>
 
     <para>The <link
     xlink:href="http://github.com/khuxtable/tracking-robot/tree/master/src/main/TrackingRobot/">source
     sketches</link> are in a <link
-    xlink:href="http://github.com/khuxtable/tracking-robot">git repository</link>.</para>
+    xlink:href="http://github.com/khuxtable/tracking-robot">git
+    repository</link>.</para>
+  </section>
 
-    <para>At the moment, I'm just starting out.</para>
+  <section>
+    <title>Pictures</title>
+
+    <para>Here are some pictures:</para>
+
+    <informaltable>
+      <tgroup cols="2">
+        <tbody>
+          <row>
+            <entry><para><mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/Robot-front-view.png"></imagedata>
+                </imageobject>
+              </mediaobject></para></entry>
+
+            <entry><para><mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/Robot-side-view.png"></imagedata>
+                </imageobject>
+              </mediaobject></para></entry>
+          </row>
+
+          <row>
+            <entry><para><mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/Robot-back-view.png"></imagedata>
+                </imageobject>
+              </mediaobject></para></entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
   </section>
 </article>
