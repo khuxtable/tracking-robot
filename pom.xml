@@ -2,19 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.kathrynhuxtable.robot.heatseeker</groupId>
-	<artifactId>heatseekingrobot</artifactId>
-	<name>Heat Seeking Robot</name>
+	<groupId>org.kathrynhuxtable.robot.tracker</groupId>
+	<artifactId>trackingrobot</artifactId>
+	<name>Tracking Robot</name>
 	<version>0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<prerequisites>
 		<maven>2.2.1</maven>
 	</prerequisites>
 	<description>
-        Arduino-based heat-seeking robot. Very basic.
+        Arduino-based object tracking robot. Very basic.
     </description>
 	<inceptionYear>2010</inceptionYear>
-	<url>http://khuxtable.github.com/heat-seeking-robot</url>
+	<url>http://khuxtable.github.com/tracking-robot</url>
 	<developers>
 		<developer>
 			<id>khuxtable</id>
@@ -43,7 +43,7 @@
 	</organization>
 	<issueManagement>
 		<system>GitHub</system>
-		<url>http://github.com/khuxtable/heat-seeking-robot/issues</url>
+		<url>http://github.com/khuxtable/tracking-robot/issues</url>
 	</issueManagement>
 	<mailingLists>
 		<mailingList>
@@ -119,10 +119,10 @@
 		</site>
 	</distributionManagement>
 	<scm>
-		<connection>scm:git:git://github.com/khuxtable/heat-seeking-robot.git</connection>
-		<developerConnection>scm:git:git+ssh://git@github.com/khuxtable/heat-seeking-robot.git
+		<connection>scm:git:git://github.com/khuxtable/tracking-robot.git</connection>
+		<developerConnection>scm:git:git+ssh://git@github.com/khuxtable/tracking-robot.git
         </developerConnection>
-		<url>http://github.com/khuxtable/heat-seeking-robot</url>
+		<url>http://github.com/khuxtable/tracking-robot</url>
 	</scm>
 	<reporting>
 		<plugins>

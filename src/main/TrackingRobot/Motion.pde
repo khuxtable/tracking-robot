@@ -18,7 +18,7 @@
 #include "PinAssignments.h"
 
 /*
- * Motion handling for a heat seeking robot.
+ * Motion handling for an object tracking robot.
  *
  * Author: Kathryn Huxtable
  */

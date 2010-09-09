@@ -15,7 +15,7 @@
  */
 
 /*
- * Pin assignments for a heat seeking robot.
+ * Pin assignments for an object tracking robot.
  *
  * Author: Kathryn Huxtable
  */

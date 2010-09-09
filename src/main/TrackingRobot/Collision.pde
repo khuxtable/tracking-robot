@@ -15,7 +15,7 @@
  */
 
 /*
- * Collision detection code for a heat seeking robot.
+ * Collision detection code for an object tracking robot.
  *
  * Author: Kathryn Huxtable
  */

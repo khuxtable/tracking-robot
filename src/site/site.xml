@@ -1,4 +1,4 @@
-<project name="Heat Seeking Robot">
+<project name="Tracking Robot">
     <publishDate position="navigation-bottom" format="dd MMM yyyy" />
     <version position="left" />
     <bannerLeft>
@@ -7,7 +7,7 @@
         <href>http://www.kathrynhuxtable.org/</href>
     </bannerLeft>
     <bannerRight>
-        <name>Heat Seeking Robot</name>
+        <name>Tracking Robot</name>
     </bannerRight>
     <skin>
         <groupId>org.kathrynhuxtable.maven.skins</groupId>
@@ -20,7 +20,7 @@
             <item name="kathrynhuxtable.org" href="http://www.kathrynhuxtable.org" />
         </links>
 
-        <menu name="Heat Seeking Robot">
+        <menu name="Tracking Robot">
             <item name="Introduction" href="index.html" />
         </menu>
 

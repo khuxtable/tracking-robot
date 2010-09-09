@@ -15,7 +15,7 @@
  */
 
 /*
- * PING))) code for a heat seeking robot.
+ * PING))) code for an object tracking robot.
  *
  * Author: Kathryn Huxtable
  */

@@ -17,7 +17,7 @@
 #include "PinAssignments.h"
 
 /*
- * Main program for a heat seeking robot.
+ * Main program for an object tracking robot.
  *
  * Author: Kathryn Huxtable
  */

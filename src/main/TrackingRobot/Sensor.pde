@@ -18,7 +18,7 @@
 #include "PinAssignments.h"
 
 /*
- * Sensor tower handling for a heat seeking robot.
+ * Sensor tower handling for an object tracking robot.
  *
  * Author: Kathryn Huxtable
  */

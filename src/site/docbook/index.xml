@@ -25,15 +25,14 @@
       <title>Introduction</title>
     </info>
 
-    <para>The heat seeking robot is an <link
+    <para>The tracking robot is an <link
     xlink:href="http://arduino.cc">Arduino</link>-based home-brew robot that
-    moves towards heat, as detected by two passive infrared detectors.</para>
+    moves towards a moving object, as detected by an ultrasonic range finder.</para>
 
     <para>The <link
-    xlink:href="http://github.com/khuxtable/heat-seeking-robot/tree/master/src/main/HeatSeekingRobot/">source
+    xlink:href="http://github.com/khuxtable/tracking-robot/tree/master/src/main/TrackingRobot/">source
     sketches</link> are in a <link
-    xlink:href="http://github.com/khuxtable/heat-seeking-robot">git
-    repository</link>.</para>
+    xlink:href="http://github.com/khuxtable/tracking-robot">git repository</link>.</para>
 
     <para>At the moment, I'm just starting out.</para>
   </section>
