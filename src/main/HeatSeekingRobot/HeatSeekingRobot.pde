@@ -22,28 +22,35 @@
  * Author: Kathryn Huxtable
  */
 
+#define scanThreshold 30
+
 void setup() {
-    initSensor();
+    initCollision();
+    //    initSensor();
     initMotion();
     initPing();
 }
 
 void loop() {
-    int distance = getPing();
-    switch (distance) {
-    case 0:
-        goForward();
-        delay(200);
-        break;
-    case 1:
-        turnLeft(30);
-        break;
-    case 2:
-        turnRight(30);
-        break;
-    default:
-        delay(200);
-        break;
+    if (isLeftCollision()) {
+        turnRight(10);
+        delay(50);
+    } else if (isRightCollision()) {
+        turnLeft(10);
+        delay(50);
+    } else {
+        int distance = getPing();
+
+        if (distance == 0) {
+            //stopMotion();
+            delay(50);
+        } else if (distance > 0 && distance <= scanThreshold) {
+            // Avoid obstacle.
+            turnRight(10);
+            delay(50);
+        } else {
+            goForward();
+            delay(50);
+        }
     }
-    delay(100);
 }

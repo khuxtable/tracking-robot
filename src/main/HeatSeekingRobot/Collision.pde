@@ -15,24 +15,20 @@
  */
 
 /*
- * Pin assignments for a heat seeking robot.
+ * Collision detection code for a heat seeking robot.
  *
  * Author: Kathryn Huxtable
  */
 
-// Digital pins to control the servos.
-#define SENSOR_SERVO_PIN        7
-#define RIGHT_SERVO_PIN         8
-#define LEFT_SERVO_PIN          9
+void initCollision() {
+    pinMode(LEFT_COLLISION_SWITCH, INPUT);
+    pinMode(RIGHT_COLLISION_SWITCH, INPUT);
+}
 
-// Digital pin to read PING))) sensor.
-#define PING_PIN                4
+boolean isLeftCollision() {
+    return digitalRead(LEFT_COLLISION_SWITCH) == HIGH;
+}
 
-// Digital pins to read collision switches.
-#define LEFT_COLLISION_SWITCH   5
-#define RIGHT_COLLISION_SWITCH  6
-
-// Digital pins to signal PIR values.
-#define LEFT_LED_PIN            10
-#define RIGHT_LED_PIN           11
-#define CENTER_LED_PIN          12
+boolean isRightCollision() {
+    return digitalRead(RIGHT_COLLISION_SWITCH) == HIGH;
+}
