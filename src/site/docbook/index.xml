@@ -31,7 +31,7 @@
     finder.</para>
 
     <para>At present, it is pretty basic. It just detects walls and avoids
-    them.</para>
+    them, mostly.</para>
   </section>
 
   <section>
